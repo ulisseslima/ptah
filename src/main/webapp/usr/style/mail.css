@@ -1,0 +1,46 @@
+/* Created on : Jun 10, 2010, 8:21:02 PM
+   Author     : wonka*/
+#char-count {
+    visibility: hidden;
+    display: block;
+    font-weight: bold; color: maroon;
+    padding-left: 35em;
+}
+.mail{
+    width: 310px;
+}
+.mail-headers{
+    width: 35px;
+    text-align: center;
+}
+.mail-sender, .mail-date{
+    font-size: smaller;
+    color: gray;
+}
+.mail-date{
+    text-align: right;
+    width: 110px;
+    vertical-align: top;
+}
+.mail-subject-false, .mail-subject-true{
+    margin-top: .5em;
+    cursor: pointer;
+}
+.mail-subject-false{
+    font-weight: bold;    
+}
+.mail-subject-true{
+    
+}
+.mail-content{
+    display: none;
+    padding: 1em;
+}
+.boxy{
+    padding: 2px;
+    display: inline-block;
+    margin-top: 3px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: white;
+}

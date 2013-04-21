@@ -1,0 +1,12 @@
+/*  Created on : 18/10/2009, 12:58:23
+    Author     : Wonka  */
+header, nav ul li, footer{
+    background-color: rgb(50, 160, 230);
+    color: white;
+}
+nav, nav ul li:hover{
+    background-color: rgb(150, 200, 240);
+}
+nav ul li{    
+    color: white;
+}

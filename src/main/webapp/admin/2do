@@ -1,0 +1,39 @@
+O que pode ser feito?
+- A tabela char tem uma coluna chamada "fame". Isso pode ser aproveitado!
+- Pet and homunculus information;
+- Quando selecionar o personagem, mostrar o last map e o save map;
+- Possibilitar matar monstros offline;
+- Diferenciar com cores as contas públicas das privadas;
+- Enviar SMS quando acharem MVP Card;
+- Alguma integração com o twitter, tipo "o que estão falando sobre...";
+- Fazer a parte de ordenação de chars nesse estilo: file:///C:/Users/Wonka/Documents/Downloads/chapter04/top5-complete/top5.html;
+- Permutação de chars entre contas do mesmo usuário;
+- Travel (takes x minutes to travel from y to z);
+- Auction system;
+- Pra controlar o storage:
+    * ao clicar num item do storage ele vai pra action box;
+    * na action box tem as ações:
+        - sell;
+        - auction;
+        - identify;
+- Lista de desejos;
+- Criar uma <aside> do lado esquerdo da página com comandos só para accounts level 99;
+- Integrar com Gravatar;
+
+Design-wise:
+- A tag input pode incorporar uma div de tooltip que aparece com transition vindo da direita pra esquerda;
+- <img src="http://www.ragnadb.com.br/img/small/501.gif" alt="lol"/>
+- Find a politically correct way of displaying item images;
+- Em toda página que tiver muitas sections, colocar um botão de "expand". Esse botão tira a section e transforma num aside;
+
+Recuperação de senhas:
+- Permitir o reset de senha de uma conta. No reset o usuário deve entrar com uma senha de qualquer outra de suas contas.
+
+Code Warnings:
+- Verificar se o não-uso do padrão singleton pro captcha pode causar acúmulo de objetos inutilizados na memória;
+
+##findings##
+- Pra deixar alguém offline, zerar os valores nas tabelas: char(online), guild(connect_member) e guild_member(online). Mas isso não kicka efetivamente o char do server.
+- map/clif.c tem métodos como "criar chat", party invite, pet related methods, usar storage, fazer trocas,
+    damage packets, skill up, cooking, resurrection, emotions, change guild emblem, guild break,
+    friend list add, mail, auction and whatnot.

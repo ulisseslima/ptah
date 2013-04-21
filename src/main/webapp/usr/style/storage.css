@@ -1,0 +1,48 @@
+/*  Created on : 25/01/2010, 02:24:44
+    Author     : Wonka*/
+#action-box-parent{overflow: visible;}
+.item-amount{
+    padding: 1px;
+    display: inline-block;
+    min-width: 25px;
+    background-color: gray;
+    color: silver;
+    vertical-align: top;
+    text-align: center;
+    font-size: smaller;
+    cursor: pointer;
+}
+.item-name, .item-amount{
+    text-shadow: black 1px 1px;
+    color: white;
+}
+.storage-item{
+    margin-bottom:3px;    
+}
+#action-box img{
+    width: 38px; height: 50px;
+}
+#action-box .storage-item{
+    display: inline-block;
+    width: 230px;
+    margin-right: 3px;
+}
+.item-name{
+    vertical-align: top;
+    display: inline-block;
+    max-width: 160px;
+    line-height: 26px;
+}
+.unidentified .item-name{
+    color: gray;
+    cursor: pointer;
+}
+#action-box .storage-item .item-name{
+    padding-top: 1.5em;
+}
+.unidentified{
+    background-color: silver;
+    background-image: url("mag.png");
+    background-repeat: no-repeat;
+    background-position: right;    
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!--Author     : Wonka
+    Description: DataBase connection settings-->
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ptah?autoReconnect=true</property>
+        <property name="hibernate.connection.username">ptah</property>
+        <property name="hibernate.connection.password">pwdhere</property>
+        <property name="hibernate.connection.pool_size">10</property>
+        <property name="c3p0.acquire_increment">1</property>
+        <property name="c3p0.idle_test_period">300</property> <!-- seconds -->
+        <property name="c3p0.min_size">5</property>
+        <property name="c3p0.max_size">100</property>
+        <property name="c3p0.timeout">100</property>
+        <property name="c3p0.max_statements">0</property>
+
+        <mapping class="com.dvlcube.log.Access"/>
+        <mapping class="com.dvlcube.log.AccessBrowser"/>
+        <mapping class="com.dvlcube.log.AccessSystem"/>
+        <mapping class="com.dvlcube.model.Auction"/>
+        <mapping class="com.dvlcube.model.Group"/>
+        <mapping class="com.dvlcube.model.GroupMembership"/>
+        <mapping class="com.dvlcube.model.Homunculus"/>
+        <mapping class="com.dvlcube.model.Item"/>
+        <mapping class="com.dvlcube.model.Login"/>
+        <mapping class="com.dvlcube.model.Mail"/>
+        <mapping class="com.dvlcube.model.Memo"/>
+        <mapping class="com.dvlcube.model.Mercenary"/>
+        <mapping class="com.dvlcube.model.Mob"/>
+        <mapping class="com.dvlcube.model.Party"/>
+        <mapping class="com.dvlcube.model.Pet"/>
+        <mapping class="com.dvlcube.model.Quest"/>
+        <mapping class="com.dvlcube.model.Request"/>
+        <mapping class="com.dvlcube.model.Skill"/>
+        <mapping class="com.dvlcube.model.SkillHomunculus"/>
+        <mapping class="com.dvlcube.model.SocialAccount"/>
+        <mapping class="com.dvlcube.model.Storage"/>
+        <mapping class="com.dvlcube.model.URL"/>
+        <mapping class="com.dvlcube.model.User"/>
+        <mapping class="com.dvlcube.model.admin.CharLog"/>
+        <mapping class="com.dvlcube.model.admin.GlobalRegValue"/>
+        <mapping class="com.dvlcube.model.admin.IPBanList"/>
+        <mapping class="com.dvlcube.model.admin.Interlog"/>
+        <mapping class="com.dvlcube.model.admin.MapReg"/>
+        <mapping class="com.dvlcube.model.admin.RagSrvInfo"/>
+        <mapping class="com.dvlcube.model.admin.SCData"/>
+        <mapping class="com.dvlcube.model.admin.SStatus"/>
+        <mapping class="com.dvlcube.model.character.CartInventory"/>
+        <mapping class="com.dvlcube.model.character.Char"/>
+        <mapping class="com.dvlcube.model.character.Friend"/>
+        <mapping class="com.dvlcube.model.character.Hotkey"/>
+        <mapping class="com.dvlcube.model.character.Inventory"/>
+        <mapping class="com.dvlcube.model.character.MercenaryOwner"/>
+        <mapping class="com.dvlcube.model.character.SkillEntry"/>
+        <mapping class="com.dvlcube.model.guild.Guild"/>
+        <mapping class="com.dvlcube.model.guild.GuildAlliance"/>
+        <mapping class="com.dvlcube.model.guild.GuildCastle"/>
+        <mapping class="com.dvlcube.model.guild.GuildExpulsion"/>
+        <mapping class="com.dvlcube.model.guild.GuildMember"/>
+        <mapping class="com.dvlcube.model.guild.GuildPosition"/>
+        <mapping class="com.dvlcube.model.guild.GuildSkill"/>
+        <mapping class="com.dvlcube.model.guild.GuildStorage"/>
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,48 @@
+/* Created on : 18/02/2010, 04:41:24
+   Author     : Wonka*/
+#status{
+    padding: 1em;
+}
+.status-bar{
+    width: 70px;
+    background-color: gray;
+}
+.status-meter{
+    width: 20px;
+    background-color: silver;
+    position: relative;
+    left: 25px;
+}
+.stat-button{    
+    width: 35px;
+    padding: 0;
+    margin: 0;
+    font-size: xx-small;
+}
+.status-bar, .status-meter, .stat-button{
+    height: 15px;
+    vertical-align: middle;
+}
+.inline, .status-bar{
+    display: inline-block;
+}
+.online{
+    background-image: url("on.gif");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding-left: 1em;
+}
+.hotkey{
+    width: 30px;
+    height: 40px;
+    padding: 2px;
+}
+.boxy{
+    padding: 2px;
+}
+.hotkey, .boxy{
+    display: inline-block;    
+    margin-top: 3px;
+    vertical-align: middle;
+    text-align: center;
+}

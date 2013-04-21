@@ -1,0 +1,9 @@
+/* Created on : 20/05/2010, 20:15:25
+   Author     : Wonka*/
+#password-check{
+    display: none;
+}
+.block{
+    max-width: 250px;
+    vertical-align: top;
+}

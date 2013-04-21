@@ -1,0 +1,64 @@
+/*  Created on : 28/07/2010, 00:20:08
+    Author     : Wonka    */
+header, footer, #console{
+    background-color: #383838;
+    background: -webkit-gradient(linear, 0% 100%, 0% 0%, from(#383838), to(#4a4a4a));
+    background: -moz-linear-gradient(center bottom, #383838, #4a4a4a);
+}
+p{
+    color: rgb(51,51,51);
+}
+h1{
+    color: white;
+    text-shadow: black -2px -2px;
+}
+footer{    
+    color: silver;
+}
+nav .menu-item span{
+    background-color: black;
+    color: white;
+}
+.menu-item:hover, .menu-item:visited{
+    background-color: white;
+}
+#main, aside, .prompt-window{
+    background-color: white;
+}
+a{color: white;}
+.boxy a{color: black;}
+.gray{color: gray;}
+
+h2, h3.fail, h3.success, h3.illegal, h3.warning, h3.tip{
+    color: white;
+}
+h4, h4 a{
+    color: #666;
+}
+nav, h2, h4, section, .section{
+    background-color: silver;
+    background: -webkit-gradient(linear, 0% 100%, 0% 0%, from(#D7D7D7), to(#E4E4E4));
+    background: -moz-linear-gradient(center bottom, #D7D7D7, #E4E4E4);
+}
+h3.fail, h3.illegal{background-color: red;}
+h3.success{background-color: green;}
+h3.warning{background-color: orange;}
+h3.tip{
+    margin-top: 1em; margin-bottom: 1em;
+    background-color: black;
+}
+
+input, .button, button, label:hover span{
+    background-color: rgb(240, 240, 240);
+    border-color: gray;
+}
+input:hover, .button:hover, button:hover{
+    background-color: silver;
+    color: white;
+}
+input:active, .button:active, button:active{
+    background-color: silver;
+}
+label:hover span{
+    color: gray;
+}

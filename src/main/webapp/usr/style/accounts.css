@@ -1,0 +1,78 @@
+/*Created on : Jan 9, 2010, 12:06:27 AM
+  Author     : Wonka*/
+.add{float: left;}
+.black{color: black;}
+.bar-container{
+    height: 10px;
+    width: 100px;
+    border: 1px solid;
+    display: inline-block;
+}
+.char-hp, .char-sp{
+    margin-top: 0px;
+    margin-bottom: 1px;
+    height: 4px;
+}
+.char-hp{background-color: green;}
+.char-sp{background-color: blue;}
+.char {
+    margin: 0.5em;
+    background-image: url("char.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    background-color: white;
+}
+.char-info, .position{
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+.char-info{
+    height: 13px;
+    overflow: hidden;
+    margin: 4px;
+    padding: 4px;    
+    background-color: white;
+    opacity: .3;
+}
+.char-info:hover{
+    height: 30px;
+    opacity: 1;
+}
+.leader{
+    background-color: gray;
+    color: white;
+}
+.level{
+    float: right;
+    font-size: x-large;
+    text-shadow: black 1px 1px 1px;
+    color: white;
+}
+.new-char {
+    width: 150px;
+    height: 100px;
+    background-color: silver;
+    display: inline-block;
+}
+.new-picture{display: inline-block;}
+
+.position {
+    font-size: xx-small;
+    position: relative;
+    background-color: black;
+    margin-right: 1em;
+    color: white;
+    padding: 3px;
+    text-align: center;
+    top: 8px;
+    z-index: 99;
+}
+.prompt-window{
+    height: 300px;
+}
+.remove{
+    float: right;
+}
